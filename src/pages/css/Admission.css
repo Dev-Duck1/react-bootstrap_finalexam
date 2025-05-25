@@ -1,0 +1,193 @@
+/* Admission.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.admission-container {
+  font-family: 'Poppins', sans-serif;
+  color: #2d3436;
+  padding: 4rem 0;
+}
+
+/* Header Section */
+.admission-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.admission-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+}
+
+.admission-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #28a745;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+  margin-bottom: 3rem;
+}
+
+.why-choose-section h2 {
+  color: #28a745;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.list-group-item {
+  border: none;
+  margin-bottom: 0.5rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #28a745;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateX(10px);
+  background-color: #e9f5eb;
+}
+
+/* Requirements Section */
+.requirements-section {
+  margin: 2rem 0;
+}
+
+.requirements-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.requirements-section ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.requirements-section li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.requirements-section li::before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5rem;
+}
+
+/* Application Form */
+.application-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.form-select {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.alert-info {
+  background-color: #e9f5eb;
+  border-color: #c3e6cb;
+  color: #155724;
+  border-radius: 8px;
+}
+
+/* Important Dates Table */
+.dates-table {
+  margin-top: 3rem;
+}
+
+.dates-table h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #28a745;
+  color: white;
+}
+
+.table th {
+  font-weight: 600;
+  border: none;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #28a745;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admission-container {
+    padding: 2rem 0;
+  }
+  
+  .admission-header h1 {
+    font-size: 2rem;
+  }
+  
+  .application-form {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .admission-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .form-control, .form-select {
+    font-size: 0.9rem;
+  }
+}

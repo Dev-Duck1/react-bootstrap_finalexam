@@ -1,0 +1,52 @@
+/* Footer.css */
+
+:root {
+  --dcc-green: #2e7d32;
+  --dcc-dark: #1b1b1b;
+  --dcc-white: #ffffff;
+  --dcc-muted: #cfd8dc;
+  --font-family: 'Segoe UI', sans-serif;
+}
+p, a{
+    font-size: 0.9rem;
+    color: var(--dcc-dark);
+}
+
+.dcc-footer {
+  background-color: var(--dcc-dark);
+  color: var(--dcc-white);
+  font-family: var(--font-family);
+}
+
+.footer-title {
+  color: var(--dcc-green);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: var(--dcc-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--dcc-green);
+  text-decoration: underline;
+}
+
+.footer-icon {
+  color: var(--dcc-white);
+  font-size: 1.3rem;
+  margin-right: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: var(--dcc-green);
+}
+
+.footer-divider {
+  border-color: var(--dcc-green);
+  margin-top: 2rem;
+}

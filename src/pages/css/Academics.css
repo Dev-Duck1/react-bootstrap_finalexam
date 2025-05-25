@@ -1,0 +1,195 @@
+/* General Styles */
+.academics-container {
+    padding: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .header-row {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .divider {
+    height: 3px;
+    width: 80px;
+    background: #3498db;
+    margin: 0 auto 1.5rem;
+  }
+  
+  /* Tab Styles */
+  .program-tabs {
+    margin-bottom: 2rem;
+  }
+  
+  .program-tabs .nav-link {
+    color: #7f8c8d;
+    font-weight: 600;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0 0.2rem;
+  }
+  
+  .program-tabs .nav-link.active {
+    color: #3498db;
+    background: transparent;
+    border-bottom: 3px solid #3498db;
+  }
+  
+  .program-tabs .nav-link:hover {
+    color: #3498db;
+  }
+  
+  /* Program Content Styles */
+  .program-content {
+    padding: 1.5rem 0;
+  }
+  
+  .program-heading {
+    color: #2c3e50;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .program-description {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  /* Curriculum Card Styles */
+  .curriculum-cards {
+    margin: 1.5rem 0;
+  }
+  
+  .grade-col {
+    margin-bottom: 1.5rem;
+  }
+  
+  .grade-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .grade-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .grade-header {
+    background: #3498db;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0 !important;
+  }
+  
+  .subject-title {
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subject-list {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+  }
+  
+  /* Subject Section Styles */
+  .subject-section {
+    margin-bottom: 2rem;
+  }
+  
+  .subject-section-heading {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .subject-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .subject-item {
+    padding: 0.5rem 0;
+    color: #7f8c8d;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .subject-item:before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Accordion Styles */
+  .department-accordion {
+    margin-bottom: 2rem;
+  }
+  
+  .department-item {
+    margin-bottom: 0.5rem;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .department-header {
+    background: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .department-header:hover {
+    background: #ecf0f1;
+  }
+  
+  .department-body {
+    background: white;
+    color: #7f8c8d;
+  }
+  
+  /* AP Section Styles */
+  .ap-section {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .ap-heading {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .ap-description {
+    color: #7f8c8d;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .program-tabs .nav-link {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .grade-col {
+      margin-bottom: 1rem;
+    }
+  }

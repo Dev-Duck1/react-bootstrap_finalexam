@@ -1,0 +1,209 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.about-container {
+  font-family: 'Poppins', sans-serif;
+  color: #2d3436;
+  padding: 4rem 0;
+}
+
+/* Header Section */
+.header-row {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.title-divider {
+  width: 80px;
+  height: 4px;
+  background: #3498db;
+  margin: 0 auto 1.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  font-weight: 300;
+}
+
+/* History Section */
+.history-section {
+  margin-bottom: 4rem;
+}
+
+.history-content {
+  padding-right: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+}
+
+.history-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #636e72;
+  margin-bottom: 1.5rem;
+}
+
+.campus-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Accordion Styles */
+.vision-accordion {
+  margin: 3rem 0;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 8px!important;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.accordion-header {
+  background: #f8f9fa!important;
+  font-weight: 600;
+  color: #2c3e50!important;
+  padding: 1.2rem 2rem;
+}
+
+.accordion-header i {
+  color: #3498db;
+  margin-right: 1rem;
+}
+
+.accordion-body {
+  background: #fff;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #636e72;
+}
+
+.values-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.values-list li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.values-list li::before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.values-list span {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Facilities Section */
+.facilities-section {
+  margin-top: 4rem;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.facility-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+}
+
+.facility-card i {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.facility-card h3 {
+  color: #2c3e50;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.facility-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .history-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .campus-image {
+    height: 300px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    padding: 2rem 0;
+  }
+  
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}

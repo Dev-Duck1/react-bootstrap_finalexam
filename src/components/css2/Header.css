@@ -1,0 +1,48 @@
+/* Header.css */
+
+:root {
+    --primary-color: #2e7d32; /* DCC Green */
+    --hover-color: #256429;
+    --text-color: #ffffff;
+    --background-color: #2e7d32;
+    --font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dcc-navbar {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    padding: 0.8rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dcc-brand {
+    font-weight: 700;
+    color: var(--text-color) !important;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .dcc-brand:hover {
+    color: #000000 !important;
+    text-decoration: none;
+  }
+  
+  .dcc-nav .nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .dcc-nav .nav-link:hover,
+  .dcc-nav .nav-link.active {
+    color: #c8e6c9 !important;
+    text-decoration: underline;
+  }
+  
+  .navbar-toggler {
+    background-color: #000000;
+    border-radius: 4px;
+  }
+  

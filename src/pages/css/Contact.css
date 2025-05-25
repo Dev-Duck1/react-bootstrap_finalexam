@@ -1,0 +1,70 @@
+/* Contact.css */
+
+:root {
+  --primary-color: #2e7d32; /* DCC Green */
+  --secondary-color: #f5f5f5;
+  --text-color: #333;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #256429;
+  border-color: #256429;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  background-color: var(--secondary-color);
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  margin-top: 1rem;
+}
